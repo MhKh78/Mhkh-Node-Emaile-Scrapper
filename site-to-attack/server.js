@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.get('/json', (req, res, next) => {
   res.json({
     lol: true,
-    email: 'mhkh431@gmail.com',
+    email: 'test@loli.io',
   });
 });
 app.get('/mock_json', (req, res, next) => {
