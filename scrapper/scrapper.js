@@ -59,10 +59,9 @@ const start = function (endPoint) {
           } else if (headers['content-type'].startsWith('text')) {
             const virtualDom = new JSDOM(data).window.document;
             virtualDom.querySelectorAll('a').forEach(({ href }) => {
+              console.log('hret', href);
               anchors.push(
-                href.startsWith('http')
-                  ? href
-                  : `${'http://localhost:8000'}${href}`
+                href.startsWith('http') ? href : `${endPoint}${href}`
               );
             });
 
