@@ -1,0 +1,17 @@
+.table tbody {
+    color: red;
+    font-size: 12px;
+}
+
+.table thead {
+    font-size: 12px;
+}
+
+.content {
+    font-size: 12px;
+
+}
+
+.margin {
+    margin: 10px;
+}
